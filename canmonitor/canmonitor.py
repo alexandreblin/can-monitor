@@ -103,10 +103,10 @@ def main(stdscr, reading_thread):
         if should_redraw.wait(timeout=0.05):  # Timeout needed in order to react to user input
             max_y, max_x = win.getmaxyx()
 
-            column_width = 50
+            column_width = 70
             id_column_start = 2
-            bytes_column_start = 13
-            text_column_start = 38
+            bytes_column_start = 22
+            text_column_start = 60
 
             # Compute row/column counts according to the window size and borders
             row_start = 3
